@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/global.css">
+    <title>Mongodb Lab13 Ciência da Computação</title>
+</head>
+<body>
+    <div id="container">
+       <div id="card">
+            <div id="menu">
+                <button>NOVO POST</button>
+            </div>
+            <div id="posts">
+                <% for(var s =0; s< status.length; s++){ %>
+                    <div id="postCard">
+                        <h1> <%=status[s].title%></h1>
+                        <span><%=status[s].summary%></span>
+                        <p><%=status[s].content%></p>
+                    </div>
+                <%}%>
+            </div>
+       </div>
+    </div>
+</body>
+</html>
