@@ -7,7 +7,8 @@ Para iniciar o projeto siga os seguintes passos
     npm i
     npm run start
 
-Pastas 
+Pastas
+
 ./views 
     Nesta pasta você encontra todos os htmls utilizados neste projeto
 
