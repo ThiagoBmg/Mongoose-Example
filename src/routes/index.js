@@ -5,8 +5,10 @@ const posts = require('../controllers/posts'); // chamando o controller respons�
 // criar posts (POST)
 router.post('/newpost', posts.newPost);
 
+// página home da aplicação
 router.get('/', posts.getPost);
 
+// formulário de envio
 router.get('/createPost',(req,res)=>{
     res.render('createPost')
 });

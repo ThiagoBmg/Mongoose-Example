@@ -1,14 +1,14 @@
 {
   "name": "lab13",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este projeto é um exemplo de utilizalçao do mongoose + mongoDb",
   "main": "index.js",
   "scripts": {
     "dev": "npx nodemon index.js",
     "start": "npx node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Thiago Gomes",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",

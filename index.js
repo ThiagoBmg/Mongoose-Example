@@ -4,6 +4,8 @@ const app = express();
 
 require('./src/database'); // iniciando banco de dados
 
+const PORT = 8080; // armazenando a porta utilizada pelo servidor
+
 app.use(bodyParser.urlencoded()); // body-parser deprecated undefined extended: provide extended option index.js:6:20
 app.use(express.json()); // trabalhando com formato json nas requisições 
 
@@ -13,6 +15,4 @@ app.set('view engine', 'ejs'); // não é necessário declarar o app.set para o 
 app.use(require('./src/routes')); // definindo as rotas
 
 // iniciando servidor
-app.listen(8080, ()=>{ 
-    console.log('\n App rodando na porta 3000')
-})
+app.listen(PORT, ()=>console.log(`\n Servidor rodando na porta ${PORT}`));

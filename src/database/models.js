@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// criando o schema para os posts 
 const postSchema = new mongoose.Schema({
     title: String,
     summary: String,
