@@ -10,11 +10,12 @@ module.exports={
     
     newPost(req,res){
         try {
+            //console.log(req.body)
             let {title, summary, content} = req.body || null; // pegando os valores do post
             var newPost = new dbPost({title,summary,content}); // criando novo post com o model do banco de dados
             newPost.save(); // salvando novo post 
-            //console.log(newPost)
-            res.status(200).send({status: 'post criado com sucesso'});  // retornando o sucesso ao salvar post
+            //console.log(title, summary, content)
+            res.status(200).render('sucesso');  // retornando o sucesso ao salvar post
         } catch (error) {
             res.status(400).send({status: 'Errouuuuuu bixo'}); // tratando erro, retorna um status do falstão 
         }     
