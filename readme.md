@@ -24,4 +24,4 @@ Pastas <br>
     Utilizado para configurar a conexão com o banco de dados <br>
     
     ./src/database/models
-        Responsável por armazenar os schemas 
+        Responsável por armazenar os schemas.
