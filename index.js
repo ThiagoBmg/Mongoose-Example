@@ -13,6 +13,5 @@ app.use(express.static('./public')); // permitindo o acesso a pasta public para 
 app.set('view engine', 'ejs'); // não é necessário declarar o app.set para o diretório views pois é padrão do ejs este caminho 
 
 app.use(require('./src/routes')); // definindo as rotas
-
 // iniciando servidor
 app.listen(PORT, ()=>console.log(`\n Servidor rodando na porta ${PORT}`));
